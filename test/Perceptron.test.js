@@ -1,5 +1,5 @@
 import test from 'ava'
-import Perceptron from './../../src/index.js'
+import Perceptron from './../src/index.js'
 
 test('Make a multilayer perceptron', t => {
   const layers = [

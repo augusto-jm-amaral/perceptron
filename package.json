@@ -9,8 +9,7 @@
     "build": "WEBPACK_ENV=build webpack",
     "dev": "esw -w ./src/index.js",
     "lint": "eslint ./src/index.js",
-    "test": "npm run test-functional",
-    "test-functional": "ava test/functional/**/*.test.js"
+    "test": "ava --verbose ./test/*.test.js"
   },
   "keywords": [
     "perceptron",
