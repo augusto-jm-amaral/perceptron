@@ -1,4 +1,6 @@
-export { Perceptron as default } from './Perceptron'
+import roundFunction from './Helpers'
+
+import Perceptron from './Perceptron'
 
 export {
   Step,
@@ -12,4 +14,6 @@ export {
 
 export {
   roundFunction,
-} from './Helpers'
+}
+
+export default Perceptron
