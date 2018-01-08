@@ -1,7 +1,6 @@
-const roundFunction = activationFunction => (value, places) => {
-  return parseFloat(activationFunction(value).toFixed(places))
-}
+const roundFunction = activationFunction => (value, places) =>
+  parseFloat(activationFunction(value).toFixed(places))
 
 export {
-  roundFunction,
+  roundFunction as default,
 }

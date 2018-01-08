@@ -1,4 +1,7 @@
+import roundFunction from './Helpers'
+
 import Perceptron from './Perceptron'
+
 export {
   Step,
   Sign,
@@ -8,8 +11,9 @@ export {
   Gaussian,
   Identity,
 } from './Functions'
+
 export {
   roundFunction,
-} from './Helpers'
+}
 
 export default Perceptron

@@ -1,0 +1,9 @@
+{
+  "presets": [
+    "es2015",
+    "@ava/stage-4"
+  ],
+  "plugins": [
+    "transform-runtime"
+  ]
+}
