@@ -5,8 +5,9 @@ import {
   SymmetricalRamp,
   HyperbolicTangent,
   Sigmoid,
-  roundFunction,
 } from './../src'
+
+const round = (value, decimals) => parseFloat(value.toFixed(decimals))
 
 test('Step function', (t) => {
   t.is(typeof Step, 'function', 'Step is a function')
@@ -38,7 +39,10 @@ test('SymmetricalRamp function', (t) => {
 })
 
 test('HyperbolicTangent function', (t) => {
-  const roundHyperbolicTangent = roundFunction(HyperbolicTangent)
+  const roundHyperbolicTangent = (value, decimals) => round(
+    HyperbolicTangent(value),
+    decimals,
+  )
 
   t.is(typeof HyperbolicTangent, 'function', 'HyperbolicTangent is a function')
   t.is(roundHyperbolicTangent(0.27, 2), 0.26, 'Should return .26')
@@ -49,7 +53,7 @@ test('HyperbolicTangent function', (t) => {
 })
 
 test('Sigmoid function', (t) => {
-  const roundSigmoid = roundFunction(Sigmoid)
+  const roundSigmoid = (value, decimals) => round(Sigmoid(value), decimals)
 
   t.is(typeof Sigmoid, 'function', 'Sigmoid is a function')
   t.is(Sigmoid(99), 1, 'Should return 1')

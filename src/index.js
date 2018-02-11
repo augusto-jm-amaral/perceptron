@@ -1,5 +1,3 @@
-import roundFunction from './Helpers'
-
 import Perceptron from './Perceptron'
 
 export {
@@ -11,9 +9,5 @@ export {
   Gaussian,
   Identity,
 } from './Functions'
-
-export {
-  roundFunction,
-}
 
 export default Perceptron

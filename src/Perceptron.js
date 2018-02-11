@@ -1,8 +1,9 @@
 import { generateMatrix } from './Weigths'
 
-const Perceptron = layers => () => {
+function Perceptron(layers) {
   this.state = {
     weigths: generateMatrix(layers),
+    layers,
   }
 }
 

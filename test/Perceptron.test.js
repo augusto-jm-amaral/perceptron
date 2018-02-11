@@ -8,7 +8,7 @@ test('Make a multilayer perceptron', (t) => {
     { neurons: 1 },
   ]
 
-  const perceptron = Perceptron(layers)
+  const perceptron = new Perceptron(layers)
 
-  t.is(typeof perceptron, 'function')
+  t.is(typeof perceptron, 'object')
 })
